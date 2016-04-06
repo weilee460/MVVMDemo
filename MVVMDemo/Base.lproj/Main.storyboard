@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihd-Qs-92y">
+                                <rect key="frame" x="20" y="28" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出生日期：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsk-CN-WXf">
+                                <rect key="frame" x="20" y="57" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="姓：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-ry-PBW">
+                                <rect key="frame" x="113" y="28" width="467" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-lX-4Pm">
+                                <rect key="frame" x="113" y="57" width="467" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ihd-Qs-92y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="7kB-wQ-6mX"/>
+                            <constraint firstItem="lsk-CN-WXf" firstAttribute="baseline" secondItem="JHH-lX-4Pm" secondAttribute="baseline" id="9Y1-pT-OcD"/>
+                            <constraint firstItem="Bbh-ry-PBW" firstAttribute="height" secondItem="ihd-Qs-92y" secondAttribute="height" id="IiX-cX-fNi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ihd-Qs-92y" secondAttribute="leading" id="QCX-4f-J1D"/>
+                            <constraint firstItem="Bbh-ry-PBW" firstAttribute="height" secondItem="ihd-Qs-92y" secondAttribute="height" id="ShG-Wq-LuI"/>
+                            <constraint firstItem="Bbh-ry-PBW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Wln-z5-zGc"/>
+                            <constraint firstItem="lsk-CN-WXf" firstAttribute="height" secondItem="ihd-Qs-92y" secondAttribute="height" id="XN4-xS-14E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JHH-lX-4Pm" secondAttribute="trailing" id="aa2-ln-rPJ"/>
+                            <constraint firstItem="ihd-Qs-92y" firstAttribute="baseline" secondItem="Bbh-ry-PBW" secondAttribute="baseline" id="aki-l4-2hH"/>
+                            <constraint firstItem="lsk-CN-WXf" firstAttribute="width" secondItem="ihd-Qs-92y" secondAttribute="width" id="bAd-5x-tKw"/>
+                            <constraint firstItem="lsk-CN-WXf" firstAttribute="height" secondItem="ihd-Qs-92y" secondAttribute="height" id="dLH-cC-deh"/>
+                            <constraint firstItem="JHH-lX-4Pm" firstAttribute="leading" secondItem="lsk-CN-WXf" secondAttribute="trailing" constant="8" symbolic="YES" id="eer-NF-83u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bbh-ry-PBW" secondAttribute="trailing" id="gO3-SL-YbQ"/>
+                            <constraint firstItem="JHH-lX-4Pm" firstAttribute="width" secondItem="Bbh-ry-PBW" secondAttribute="width" id="gRs-dR-I8G"/>
+                            <constraint firstItem="lsk-CN-WXf" firstAttribute="top" secondItem="ihd-Qs-92y" secondAttribute="bottom" constant="8" symbolic="YES" id="h8k-h3-D9N"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lsk-CN-WXf" secondAttribute="leading" id="qVV-fR-PaN"/>
+                            <constraint firstItem="JHH-lX-4Pm" firstAttribute="height" secondItem="ihd-Qs-92y" secondAttribute="height" id="uhr-iQ-ngY"/>
+                            <constraint firstItem="Bbh-ry-PBW" firstAttribute="leading" secondItem="ihd-Qs-92y" secondAttribute="trailing" constant="8" symbolic="YES" id="zIb-Du-LDC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdate" destination="JHH-lX-4Pm" id="WIc-iK-iHc"/>
+                        <outlet property="firstName" destination="Bbh-ry-PBW" id="Nc6-Hr-DnR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="436"/>
+        </scene>
+    </scenes>
+</document>
